@@ -6,6 +6,7 @@ HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/AWSCore/AWSC
 LD_RUNPATH_SEARCH_PATHS = $(inherited) /usr/lib/swift '@executable_path/Frameworks' '@loader_path/Frameworks'
 LIBRARY_SEARCH_PATHS = $(inherited) "${TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}" /usr/lib/swift
 OTHER_LDFLAGS = $(inherited) -l"sqlite3" -l"z" -framework "AVFoundation" -framework "AWSCore" -framework "AWSS3" -framework "BarcodeScanner" -framework "CoreGraphics" -framework "EasyTipView" -framework "FLAnimatedImage" -framework "Foundation" -framework "GoneVisible" -framework "ImageIO" -framework "ImagePicker" -framework "MobileCoreServices" -framework "QuartzCore" -framework "SQLite" -framework "Security" -framework "SwiftyJSON" -framework "SystemConfiguration" -framework "UIKit" -framework "Validator"
+OTHER_MODULE_VERIFIER_FLAGS = $(inherited) "-F${PODS_CONFIGURATION_BUILD_DIR}/AWSCore" "-F${PODS_CONFIGURATION_BUILD_DIR}/AWSS3" "-F${PODS_CONFIGURATION_BUILD_DIR}/BarcodeScanner" "-F${PODS_CONFIGURATION_BUILD_DIR}/EasyTipView" "-F${PODS_CONFIGURATION_BUILD_DIR}/FLAnimatedImage" "-F${PODS_CONFIGURATION_BUILD_DIR}/GoneVisible" "-F${PODS_CONFIGURATION_BUILD_DIR}/ImagePicker" "-F${PODS_CONFIGURATION_BUILD_DIR}/SQLite.swift" "-F${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON" "-F${PODS_CONFIGURATION_BUILD_DIR}/Validator"
 OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

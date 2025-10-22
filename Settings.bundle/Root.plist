@@ -35,7 +35,7 @@
 				<string>https://staging.acciontv.com/api/</string>
 				<string>https://prod.acciontv.com/api/</string>
 				<string>https://development.acciontv.com/api/</string>
-				<string>http://192.168.0.10:3000/</string>
+				<string>http://10.10.31.146:3000/api/</string>
 			</array>
 			<key>Titles</key>
 			<array>

@@ -423,8 +423,8 @@
 				TargetAttributes = {
 					3E86C7091FD0B31000C602A2 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = Q6H3AT84M2;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = 5NHJR33FT3;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -722,13 +722,11 @@
 			baseConfigurationReference = 47E327232D63B893125B9169 /* Pods-CardScanner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Apple Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q6H3AT84M2;
+				DEVELOPMENT_TEAM = 5NHJR33FT3;
 				ENABLE_BITCODE = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				INFOPLIST_FILE = CardScanner/Info.plist;
@@ -742,11 +740,10 @@
 				MARKETING_VERSION = 2.8;
 				OTHER_CFLAGS = "-fembed-bitcode-marker";
 				OTHER_CODE_SIGN_FLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.acciontv.extras;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carrera.extras;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "TLMD Accion Extras App 2024";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "CardScanner/CardScanner-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
@@ -760,13 +757,11 @@
 			baseConfigurationReference = 3B936812A64A77E5983A3F9C /* Pods-CardScanner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Apple Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q6H3AT84M2;
+				DEVELOPMENT_TEAM = 5NHJR33FT3;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = CardScanner/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Talent Release";
@@ -779,11 +774,10 @@
 				MARKETING_VERSION = 2.8;
 				OTHER_CFLAGS = "-fembed-bitcode";
 				OTHER_CODE_SIGN_FLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.acciontv.extras;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carrera.extras;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "TLMD Accion Extras App 2024";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "CardScanner/CardScanner-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
