@@ -262,7 +262,7 @@ class S3 {
     }
     
     func createImages(for image: String, withLocationId locationId: Int){
-        var request = URLRequest(url: URL(string:  GlobalData.sharedInstance.serverURL + "/location_modules/create_images")!)
+        var request = URLRequest(url: URL(string:  GlobalData.sharedInstance.serverURL + "/api/location_modules/create_images")!)
         request.httpMethod = "POST"
         
         var cover = 0

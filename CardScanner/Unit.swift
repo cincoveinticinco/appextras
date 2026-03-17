@@ -28,7 +28,7 @@ class Unit: Codable {
         let params: NSMutableDictionary = ["production_id": GlobalData.sharedInstance.productionId];
         
         
-        ServiceManager.sharedInstance.sendRequest(route: "/app_release/getUnits/", params: params, onSuccess:
+        ServiceManager.sharedInstance.sendRequest(route: "/api/app_release/get_units", params: params, onSuccess:
             {
                 json in
                 DispatchQueue.main.sync {

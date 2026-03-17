@@ -119,7 +119,7 @@ class ServiceManager: NSObject {
             }else{
                 var result: Any
                 if let returnData = String(data: data!, encoding: .utf8) {
-                    if(route == "/app_release/assignment/"){
+                    if(route == "/api/app_release/assignment"){
                         print(returnData)
                     }
                         

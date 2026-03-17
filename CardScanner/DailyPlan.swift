@@ -37,7 +37,7 @@ class DailyPlan{
         print(params)
         
         
-        ServiceManager.sharedInstance.sendRequest(route: "/app_release/getDailyPlan/", params: params, onSuccess:{
+        ServiceManager.sharedInstance.sendRequest(route: "/api/app_release/get_daily_plan", params: params, onSuccess:{
             json in
             DispatchQueue.main.async {
                 
@@ -131,7 +131,7 @@ class DailyPlan{
             "plan_id": GlobalData.sharedInstance.dailyPlan!,
         ];
         
-        ServiceManager.sharedInstance.sendRequest(route: "/app_release/characters_plan/", params: params, onSuccess:{
+        ServiceManager.sharedInstance.sendRequest(route: "/api/app_release/characters_plan", params: params, onSuccess:{
             json in
             DispatchQueue.main.async {
                 
@@ -220,7 +220,7 @@ class DailyPlan{
             "comment" : observation
         ];
         
-        ServiceManager.sharedInstance.sendRequest(route: "/app_release/submit_extra/", params: params, onSuccess:
+        ServiceManager.sharedInstance.sendRequest(route: "/api/app_release/submit_extra", params: params, onSuccess:
             {
                 json in
                 DispatchQueue.main.sync {

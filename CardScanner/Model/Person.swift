@@ -114,7 +114,7 @@ class Person {
         
         print(params)
         
-        ServiceManager.sharedInstance.sendRequest(route: "/app_release/save_time/", params: params, onSuccess: {
+        ServiceManager.sharedInstance.sendRequest(route: "/api/app_release/save_time", params: params, onSuccess: {
             json in
             DispatchQueue.main.async {
                 print("JSON")
@@ -139,7 +139,7 @@ class Person {
         
         print(String(describing: params));
         
-        ServiceManager.sharedInstance.sendRequest(route: "/app_release/validate_character/", params: params,
+        ServiceManager.sharedInstance.sendRequest(route: "/api/app_release/validate_character", params: params,
                         onSuccess:{
                             json in
                                 DispatchQueue.main.async {
@@ -214,7 +214,7 @@ class Person {
         print(String(describing: params));
         
         
-        ServiceManager.sharedInstance.sendRequest(route: "/app_release/assignment/", params: params,
+        ServiceManager.sharedInstance.sendRequest(route: "/api/app_release/assignment", params: params,
             onSuccess:
             {
                 json in
@@ -247,7 +247,7 @@ class Person {
             
                print("entro aqui Search talent")
             
-            ServiceManager.sharedInstance.sendRequest(route: "/app_release/get_info_actor/", params: params,
+            ServiceManager.sharedInstance.sendRequest(route: "/api/app_release/get_info_actor", params: params,
                   onSuccess:{
                     json in
                     DispatchQueue.main.async {

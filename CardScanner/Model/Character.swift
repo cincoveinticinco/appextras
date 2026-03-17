@@ -43,7 +43,7 @@ class Characters {
             
         ];
         
-        ServiceManager.sharedInstance.sendRequest(route: "/app_release/save_info_extra/", params: params, onSuccess:
+        ServiceManager.sharedInstance.sendRequest(route: "/api/app_release/save_info_extra", params: params, onSuccess:
             {
                 json in
                 DispatchQueue.main.sync {
