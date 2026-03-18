@@ -155,7 +155,7 @@ class AlertsViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func logout(){
-        let url = URL(string: GlobalData.sharedInstance.serverURL + "/api/admin/saml/logout/1/" + GlobalData.token!)!
+        let url = URL(string: GlobalData.sharedInstance.serverURL + "/api/admin/saml/logout/" + GlobalData.token!)!
         
         let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
             guard let data = data else { return }
