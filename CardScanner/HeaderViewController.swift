@@ -46,7 +46,7 @@ class HeaderViewController: UIViewController {
     @IBAction func OnLogoutAccount(_ sender: Any) {
         self.viewButtons.isHidden = false;
         
-        let url = URL(string: GlobalData.sharedInstance.serverURL + "/saml/logout/1/" + GlobalData.token!)!
+        let url = URL(string: GlobalData.sharedInstance.serverURL + "/api/saml/logout/" + GlobalData.token!)!
         
         let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
             guard let data = data else { return }

@@ -292,8 +292,8 @@ extension WebLoginViewController {
     }
     
     struct Urls {
-        static let Login =  GlobalData.sharedInstance.serverURL + "/api/admin/saml/init"
-        static let LogOut =  GlobalData.sharedInstance.serverURL + "/api/admin/saml/logout/"
+        static let Login =  GlobalData.sharedInstance.serverURL + "/api/saml/init"
+        static let LogOut =  GlobalData.sharedInstance.serverURL + "/api/saml/logout/"
     }
 }
 

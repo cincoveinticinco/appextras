@@ -36,7 +36,7 @@ class MenuViewController: UIViewController{
     }
     
     @IBAction func OnLogout(_ sender: Any) {
-        let url = URL(string: GlobalData.sharedInstance.serverURL + "/saml/logout/1/" + GlobalData.token!)!
+        let url = URL(string: GlobalData.sharedInstance.serverURL + "/api/saml/logout/" + GlobalData.token!)!
         
         let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
             guard let data = data else { return }
