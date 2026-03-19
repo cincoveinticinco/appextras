@@ -18,7 +18,13 @@ class SettingsBundleHelper {
     class func checkAndExecuteSettings() {
         
         if (UserDefaults.standard.string(forKey: SettingsBundleKeys.server_url) == nil) {
-            UserDefaults.standard.set("https://prod.acciontv.com/api/", forKey: SettingsBundleKeys.server_url)
+            UserDefaults.standard.set("https://prod.acciontv.com", forKey: SettingsBundleKeys.server_url)
+        }
+        // Migrate old values that had /api/ suffix — strip it so URLs aren't doubled
+        if var stored = UserDefaults.standard.string(forKey: SettingsBundleKeys.server_url),
+           stored.hasSuffix("/api/") {
+            stored = String(stored.dropLast("/api/".count))
+            UserDefaults.standard.set(stored, forKey: SettingsBundleKeys.server_url)
         }
         
         if (UserDefaults.standard.string(forKey: SettingsBundleKeys.production_id) == nil) {
